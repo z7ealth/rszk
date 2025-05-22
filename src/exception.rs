@@ -3,11 +3,14 @@ use thiserror::Error;
 #[derive(Debug, Error)]
 pub enum ZKError {
     #[error("Connection error")]
-    Connection,
+    ConnectionError,
 
     #[error("Response error")]
-    Response,
+    ResponseError,
 
     #[error("Network error")]
-    Network,
+    NetworkError,
+
+    #[error("Unsupported Record Size")]
+    UnsupportedRecordSize,
 }

@@ -2,15 +2,15 @@ use std::fmt;
 
 #[derive(Clone)]
 pub struct Attendance {
-    pub uid: i32,
-    pub user_id: i32,
+    pub uid: u32,
+    pub user_id: u32,
     pub timestamp: String,
     pub status: String,
     pub punch: i32,
 }
 
 impl Attendance {
-    pub fn new(user_id: i32, timestamp: String, status: String, punch: i32, uid: i32) -> Self {
+    pub fn new(user_id: u32, timestamp: String, status: String, punch: i32, uid: u32) -> Self {
         Self {
             uid,
             user_id,

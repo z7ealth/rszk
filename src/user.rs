@@ -2,7 +2,6 @@ use byteorder::{LittleEndian, WriteBytesExt};
 use serde::{Deserialize, Serialize};
 use serde_json::Value;
 use std::fmt;
-use std::io::Write;
 
 #[derive(Clone, Serialize, Deserialize)]
 pub struct User {
